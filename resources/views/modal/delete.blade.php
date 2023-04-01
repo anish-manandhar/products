@@ -15,8 +15,10 @@
 
                 <form action="
                     @if (url()->current() == route('category.index'))
-                    {{ route('category.destroy', $data->id) }}
-                       @endif
+                        {{ route('category.destroy', $data->id) }}
+                    @elseif(url()->current() == route('subcategory.index'))
+                        {{ route('subcategory.destroy', $data->id) }}
+                    @endif
                     " method="POST">
                     @csrf
                     @method('DELETE')

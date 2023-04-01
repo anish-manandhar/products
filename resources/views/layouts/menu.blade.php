@@ -12,3 +12,10 @@
         <p>Category</p>
     </a>
 </li>
+
+<li class="nav-item">
+    <a href="{{ route('subcategory.index') }}" class="nav-link {{ request()->routeIs('subcategory*') ? 'active' : '' }} ">
+        <i class="nav-icon fas fa-list-ul"></i>
+        <p>SubCategory</p>
+    </a>
+</li>
