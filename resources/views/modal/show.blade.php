@@ -6,6 +6,8 @@
                     <h4 class="modal-title text-success font-weight-bold">{{ __('Category Details') }}</h4>
                 @elseif(url()->current() == route('subcategory.index'))
                     <h4 class="modal-title text-success font-weight-bold">{{ __('Sub Category Details') }}</h4>
+                @elseif(url()->current() == route('product.index'))
+                    <h4 class="modal-title text-success font-weight-bold">{{ __('Product Details') }}</h4>
                 @endif
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -25,6 +27,13 @@
                 <div class="d-flex justify-content between align-items-center">
                 <p class="font-weight-bold">Category :</p>
                 <p>&nbsp;{{ $data->category->name }}</p>
+                </div>
+                @endif
+
+                @if ($data->sub_category_id)
+                <div class="d-flex justify-content between align-items-center">
+                <p class="font-weight-bold">SubCategory :</p>
+                <p>&nbsp;{{ $data->subcategory->name }}</p>
                 </div>
                 @endif
 

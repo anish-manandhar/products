@@ -18,6 +18,8 @@
                         {{ route('category.destroy', $data->id) }}
                     @elseif(url()->current() == route('subcategory.index'))
                         {{ route('subcategory.destroy', $data->id) }}
+                    @elseif(url()->current() == route('product.index'))
+                        {{ route('product.destroy', $data->id) }}
                     @endif
                     " method="POST">
                     @csrf

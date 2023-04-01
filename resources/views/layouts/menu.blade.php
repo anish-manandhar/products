@@ -19,3 +19,10 @@
         <p>SubCategory</p>
     </a>
 </li>
+
+<li class="nav-item">
+    <a href="{{ route('product.index') }}" class="nav-link {{ request()->routeIs('product*') ? 'active' : '' }} ">
+        <i class="nav-icon fas fa-list-ul"></i>
+        <p>Product</p>
+    </a>
+</li>

@@ -39,7 +39,7 @@
                                placeholder="Category name"
                                class="form-control @error('name') is-invalid @enderror">
                     </div>
-                    <label for="artileInput">Edit Category Description</label>
+                    <label for="artileInput">Edit SubCategory Description</label>
                     <div class="input-group mb-3">                       
                         <textarea name="description" id="" placeholder="Description" class="form-control @error('description') is-invalid @enderror">{{ $data->description }}</textarea>
                     </div>
